@@ -1,0 +1,14 @@
+.incident-list {
+    md-list-item {
+        padding: 5px 0px;
+
+        .id {
+            font-weight: bold;
+        }
+
+        .description {
+            padding-bottom: 5px;
+            color: grey;
+        }
+    }
+}

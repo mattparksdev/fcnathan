@@ -1,0 +1,16 @@
+<div>
+    <md-nav-list>
+        <md-list-item *ngFor="let item of users | async">
+            <a md-line [routerLink]="['/users', item._id]">
+                {{item.username}}
+                <span md-line>
+                    {{item.emails[0].address}}
+                </span>
+            </a>
+        </md-list-item>
+    </md-nav-list>
+
+    <button md-fab [routerLink]="['/users/add']">
+        <md-icon class="md-24">add</md-icon>
+    </button>
+</div>

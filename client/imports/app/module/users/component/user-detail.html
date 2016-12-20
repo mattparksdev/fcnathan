@@ -1,0 +1,23 @@
+<div>
+    <form [formGroup]="form" (submit)="save()">
+        <div>
+            <md-input dividerColor="accent" formControlName="email" placeholder="Email Address"></md-input>
+        </div>
+
+        <div>
+            <md-input dividerColor="accent" formControlName="username" placeholder="User Name"></md-textarea>
+        </div>
+
+        <div>
+            <md-input dividerColor="accent" formControlName="password" placeholder="Password"></md-textarea>
+        </div>
+
+        <div>
+            <button *ngIf="user" type="button" color="accent" md-raised-button (click)="delete()">Delete</button>
+
+            <button type="button" color="accent" md-raised-button (click)="cancel()">Cancel</button>
+
+            <button type="submit" color="accent" md-raised-button>Save</button>
+        </div>
+    </form>
+</div>

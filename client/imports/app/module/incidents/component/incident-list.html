@@ -1,0 +1,15 @@
+<div class="incident-list">
+    <md-nav-list>
+        <md-list-item *ngFor="let item of incidents | async">
+            <a md-line class="id" [routerLink]="['/incidents', item._id]">
+                #{{item.ticketId}}
+            </a>
+            <p md-line class="title">{{item.title}}</p>
+            <p md-line class="description">{{item.description}}</p>
+        </md-list-item>
+    </md-nav-list>
+
+    <button md-fab [routerLink]="['/incidents/add']">
+        <md-icon class="md-24">add</md-icon>
+    </button>
+</div>

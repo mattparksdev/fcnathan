@@ -1,0 +1,19 @@
+<div>
+    <form [formGroup]="form" (submit)="save()">
+        <div>
+            <md-input dividerColor="accent" formControlName="title" placeholder="Title"></md-input>
+        </div>
+
+        <div>
+            <md-textarea dividerColor="accent" formControlName="description" placeholder="Description"></md-textarea>
+        </div>
+
+        <div>
+            <button *ngIf="incident" type="button" color="accent" md-raised-button (click)="delete()">Delete</button>
+
+            <button type="button" color="accent" md-raised-button (click)="cancel()">Cancel</button>
+
+            <button type="submit" color="accent" md-raised-button>Save</button>
+        </div>
+    </form>
+</div>

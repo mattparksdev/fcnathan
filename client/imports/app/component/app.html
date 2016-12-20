@@ -1,0 +1,40 @@
+<div>
+    <md-toolbar class="primary-toolbar" color="primary">
+        <a routerLink="/" class="toolbar-title">
+            <h3>CRM</h3>
+        </a>
+
+        <md-menu #mainMenu="mdMenu">
+            <div [hidden]="!user">
+                <button md-menu-item [routerLink]="['/incidents']">Incidents</button>
+                <button md-menu-item [routerLink]="['/users']">Users</button>
+            </div>
+            
+            <div [hidden]="user">
+                <button md-menu-item [routerLink]="['/login']" >Log In</button>
+            </div>
+
+            <div [hidden]="!user">
+                <button md-menu-item (click)="logout()">Log Out</button>
+            </div>
+        </md-menu>
+
+        <span class="fill-remaining-space"></span>
+
+        <div class="user-name" [hidden]="!user">
+            <span>{{ user | displayName }}</span>
+        </div>
+
+        <button class="margin-left-16" md-icon-button [md-menu-trigger-for]="mainMenu">
+            <md-icon>menu</md-icon>
+        </button>
+    </md-toolbar>
+
+    <md-toolbar class="md-accent breadcrumbs" color="accent">
+        <a *ngFor="let item of routeTitles; let isLast = last">
+            {{ item }}<span [hidden]="isLast">&nbsp;&raquo;&nbsp;</span>
+        </a>
+    </md-toolbar>
+    
+    <router-outlet></router-outlet>
+</div>

@@ -1,0 +1,8 @@
+{
+  "galaxy.meteor.com": {
+    "env": {
+      "MONGO_URL": "mongodb://crm-poc:4db9a9e5-9668-4724-abab-256d424577c2@aws-us-east-1-portal.11.dblayer.com:15447,aws-us-east-1-portal.10.dblayer.com:15447/crm-poc?ssl=true",
+      "MONGO_OPLOG_URL": "mongodb://oploguser:LOBNlXksoixLx1CsSepAZMKQrJx2KD5ljcVmUqXv9u8@aws-us-east-1-portal.11.dblayer.com:15448/local?authSource=admin&ssl=true"
+    }
+  }
+}
