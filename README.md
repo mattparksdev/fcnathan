@@ -10,6 +10,7 @@ Task Steps:
 3. Nathan wants to see when an ticket is changed in severity or if a ticket is updated
 
 Task for myself:
+
 1. make it responsive
 2. make dynamic loader of incidents
 3. improve GUI and UX of dashboards 
