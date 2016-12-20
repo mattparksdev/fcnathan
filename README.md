@@ -9,11 +9,12 @@ Project For Nathan
 
 Task Steps:
 
-Build simple Incident management Suite with 1 or 2 features
-Make it so we can add or remove users
-Nathan wants to see when an ticket is changed in severity or if a ticket is updated
+1. Build simple Incident management Suite with 1 or 2 features
+2. Make it so we can add or remove users
+3. Nathan wants to see when an ticket is changed in severity or if a ticket is updated
 
 Task for myself: 
+
 1. make it responsive 
 2. make dynamic loader of incidents 
 3. improve GUI and UX of dashboards 
